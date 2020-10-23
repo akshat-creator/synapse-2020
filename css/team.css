@@ -10,9 +10,15 @@ canvas {
   body{
     font-family: 'Open Sans', sans-serif;
   }
-.about{
+.h1{
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
     visibility: hidden;
 }
+
 .team{
     margin-top: 10%;
     display: grid;
@@ -30,12 +36,18 @@ canvas {
     text-align: center;
 
   }
+  .card:hover{
+    
+    box-shadow:  3px 3px 5px #47adcf, 
+             -3px -3px 5px #5fe9ff;
+
+  }
 .card-text{
     font-size: 15px;
 }
 .btn {
     height: 40px;
-    width: 150px;
+    width: 100px;
     border: 2px solid #53cbf4;
     background-color: #ffffff;
     border-radius: 5px;

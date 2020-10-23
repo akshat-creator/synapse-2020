@@ -42,6 +42,7 @@ border-radius: 5px;
 }
 .sumbit:hover{
     background-color: #53cbf4;
+    color: white;
 }
 @media(max-width: 1000px){
     .form{
