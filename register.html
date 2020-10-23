@@ -6,28 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/register.css" />
     <title>Document</title>
 </head>
 
 <body>
+    <canvas id="canvas"></canvas>
     <form name="submit-to-google-sheet">
-        <div class="form-group">
+        <div class="form">
+            <div class="h1">Register</div>
+            <div class="particpant">
+            <div class="h5">Particpant 1*</div>
             <div class="form-row">
-                <div class="form-group col-md-3">
+                
+                <div class="form-group col-md-4">
                     <label for="name-1">Name</label>
                     <input name="name-1" class="form-control" type="text" id="name-1" required>
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
                     <label for="email-1">Email</label>
                     <input name="email-1" class="form-control" type="email" required>
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
                     <label for="mobile-1">Mobile Number</label>
                     <input name="mobile-1" class="form-control" id="mobile-1" type="number" required>
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="class_student">Class</label>
                     <select id="class_student" name="class-1" class="form-control">
                         <option selected disabled>Class</option>
@@ -39,7 +45,7 @@
                         <option>12</option>
                     </select>
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
                     <label for="section_student">Section</label>
                     <select id="section_student" name="section-1" class="form-control">
                         <option selected disabled>Section</option>
@@ -52,22 +58,25 @@
                     </select>
                 </div>
             </div>
+        </div>
+        <div class="particpant">
+            <div class="h5">Particpant 2</div>
             <div class="form-row">
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
             <label for="name-2">Name</label>
-            <input name="name-2" class="form-control" id="name-2" type="text" required>
+            <input name="name-2" class="form-control" id="name-2" type="text">
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label for="email-2">Email</label>
-            <input name="email-2" class="form-control" type="email" id="email-2" required>
+            <input name="email-2" class="form-control" type="email" id="email-2">
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label for="mobile-2">Mobile Number</label>
-            <input name="mobile-2" class="form-control" id="mobile-2" type="number" required>
+            <input name="mobile-2" class="form-control" id="mobile-2" type="number">
         </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
             <label for="class_student">Class</label>
             <select id="class_student" name="class-2" class="form-control">
                 <option selected disabled>Class</option>
@@ -79,7 +88,7 @@
                 <option>12</option>
             </select>
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-6">
             <label for="section_student">Section</label>
             <select id="section_student" name="section-2" class="form-control">
                 <option selected disabled>Section</option>
@@ -92,22 +101,25 @@
             </select>
                 </div>
             </div>
+            </div>
+            <div class="particpant">
+            <div class="h5">Particpant 3</div>
             <div class="form-row">
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
             <label for="name-3">Name</label>
-            <input name="name-3" class="form-control" id="name-3" type="text" required>
+            <input name="name-3" class="form-control" id="name-3" type="text" >
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label for="email-3">Email</label>
-            <input name="email-3" class="form-control" type="email" id="email-3" required>
+            <input name="email-3" class="form-control" type="email" id="email-3">
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label for="mobile-3">Mobile Number</label>
-            <input name="mobile-3" class="form-control" type="number" id="mobile-3" required>
+            <input name="mobile-3" class="form-control" type="number" id="mobile-3" >
             </div>
             </div>
             <div class="form-row">
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-6">
             <label for="class_student">Class</label>
 
             <select id="class_student" name="class-3" class="form-control">
@@ -120,7 +132,7 @@
                 <option>12</option>
             </select>
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-6">
             <label for="section_student">Section</label>
             <select id="section_student" name="section-3" class="form-control">
                 <option selected disabled>Section</option>
@@ -132,7 +144,12 @@
                 <option>F</option>
             </select>
         </div>
-            <button type="submit">Send</button>
+            </div>
+            </div>
+            <div class="d-flex justify-content-center">
+            <button class="sumbit" type="submit">Register</button>
+        </div>
+        </div>
         </div>
     </form>
 
@@ -147,6 +164,7 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+        <script src="./js/canvas.js"></script>
 </body>
 
 </html>
