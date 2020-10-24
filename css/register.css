@@ -81,6 +81,10 @@ canvas {
 .particpant{
     margin-bottom: 20px;
 }
+.instructions{
+    text-align: left;
+    line-height: 30px;
+}
 .sumbit{
 height: 40px;
 width: 100px;
