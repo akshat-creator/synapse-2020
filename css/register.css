@@ -9,6 +9,21 @@ canvas {
   body{
     font-family: 'Open Sans', sans-serif;
   }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #47bcb3;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6699ee;
+  }
   .topnav {
     background-color: none;
     overflow: hidden;

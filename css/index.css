@@ -10,6 +10,21 @@ canvas {
   body{
     font-family: 'Open Sans', sans-serif;
   }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #47bcb3;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6699ee;
+  }
 .topnav {
     background-color: none;
     overflow: hidden;
@@ -100,4 +115,9 @@ box-shadow:  -7px -7px 14px #a7dadd,
 }
 .text p{
  line-height: 30px;
+}
+@media(max-width: 1000px){
+   .info{
+       width: 90%;
+   }
 }
