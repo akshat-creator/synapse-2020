@@ -9,6 +9,39 @@ canvas {
   body{
     font-family: 'Open Sans', sans-serif;
   }
+  .topnav {
+    background-color: none;
+    overflow: hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
+    
+  }
+
+  .topnav a.active {
+    
+    color: black;
+  }
+  .fa{
+      color: black;
+  }
+  .topnav .icon {
+    display: none;
+  }
 
 .form{
     width: 60%;
