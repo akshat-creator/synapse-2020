@@ -70,8 +70,15 @@ canvas {
     border-radius: 20px;
     
 }
+.form{
+  text-align: center;
+  margin-top: 5em;
+}
 .h1{
     text-align: center;
+}
+.form p{
+  margin-top: 10em;
 }
 .form-row{
    margin-left: auto;

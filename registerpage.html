@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/register.css" />
+    <link rel="shortcut icon" href="./assets/favicon3.png" type="image/x-icon">
+    <title>Synapse</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html" class="active">Home</a>
+        <a href="/team.html">Team</a>
+        <a href="/faqs.html">FAQS</a>
+        <a href="/register.html">Register</a>
+
+        </a>
+    </div>
+    <canvas id="canvas"></canvas>
+    <form name="submit-to-google-sheet">
+        <div class="form">
+            <div class="h1">Register</div>
+            <div class="instructions">
+                <p>
+                    INSTRUCTIONS : <br>
+
+                   <li>EPD is on 13th November, from 2 PM to 11:13 PM. <br></li> 
+                   <li>Participants may register individually or in teams of 2 or 3 (teams are preferred). <br></li> 
+                
+                   <li>Make sure that the given information is correct. <br></li> 
+                   <li> Check inbox and/or spam folder for further emails (after registration) from Synapse <br></li> 
+                   <li>Contact us on <a href="mailto:synapseclub2021@gmail.com">synapseclub2021@gmail.com</a> or <a
+                        href="http://instagram.com/synapseclub">Instagram</a> for any queries. <br></li> 
+                        <li> For a sample question, click <a href="faqs.html">here </a>.</li> 
+
+                </p>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="tname" class="h5">Team Name</label>
+                        <input name="tname" class="form-control" type="text" id="tname" required>
+                    </div>
+            </div>
+            <div class="particpant">
+                <div class="h5">Participant 1*</div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                        <label for="name-1">Name</label>
+                        <input name="name-1" class="form-control" type="text" id="name-1" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="email-1">Email</label>
+                        <input name="email-1" class="form-control" type="email" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="mobile-1">Mobile Number</label>
+                        <input name="mobile-1" class="form-control" id="mobile-1" type="number" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="class_student">Class</label>
+                        <select id="class_student" name="class-1" class="form-control" required>
+                            <option value="" selected disabled>Class</option>
+
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="Alumni">Alumni</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="section_student">Section</label>
+                        <select id="section_student" name="section-1" class="form-control" required>
+                            <option  value="" selected disabled>Section</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option  value="C">C</option>
+                            <option  value="D">D</option>
+                            <option  value="E">E</option>
+                            <option  value="F">F</option>
+                            <option  value="Alumni">Alumni</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="particpant">
+                <div class="h5">Participant 2</div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="name-2">Name</label>
+                        <input name="name-2" class="form-control" id="name-2" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="email-2">Email</label>
+                        <input name="email-2" class="form-control" type="email" id="email-2">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="mobile-2">Mobile Number</label>
+                        <input name="mobile-2" class="form-control" id="mobile-2" type="number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="class_student">Class</label>
+                        <select id="class_student" name="class-2" class="form-control">
+                            <option selected disabled>Class</option>
+
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>Alumni</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="section_student">Section</label>
+                        <select id="section_student" name="section-2" class="form-control">
+                            <option selected disabled>Section</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                            <option>E</option>
+                            <option>F</option>
+                            <option>Alumni</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="particpant">
+                <div class="h5">Participant 3</div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="name-3">Name</label>
+                        <input name="name-3" class="form-control" id="name-3" type="text">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="email-3">Email</label>
+                        <input name="email-3" class="form-control" type="email" id="email-3">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="mobile-3">Mobile Number</label>
+                        <input name="mobile-3" class="form-control" type="number" id="mobile-3">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="class_student">Class</label>
+
+                        <select id="class_student" name="class-3" class="form-control">
+                            <option selected disabled>Class</option>
+
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>Alumni</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="section_student">Section</label>
+                        <select id="section_student" name="section-3" class="form-control">
+                            <option selected disabled>Section</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                            <option>E</option>
+                            <option>F</option>
+                            <option>Alumni</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <span class="popuptext" id="myPopup"> <button class="sumbit" type="submit"
+                        onclick="sumbit()">Register</button> </span>
+            </div>
+        </div>
+        </div>
+    </form>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysKi9bF2Tw0L3zpiuU614JNXnbPkNX_3BzGG0JIyWQJczZ5odf/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response)),alert("You are registered for EvolvePD"),location.reload()
+                .catch(error => console.error('Error!', error.message))
+        })
+       
+    </script>
+    <script src="./js/canvas.js"></script>
+</body>
+
+</html>
